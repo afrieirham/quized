@@ -31,6 +31,7 @@
 		"@adonisjs/session": "^1.0.27",
 		"@adonisjs/shield": "^1.0.8",
 		"@afrie/prettier-config": "^1.0.2",
+		"adonis-acl": "^1.1.1",
 		"mysql": "^2.18.1"
 	},
 	"devDependencies": {},
