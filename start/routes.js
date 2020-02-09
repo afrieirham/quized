@@ -17,3 +17,7 @@
 const Route = use('Route');
 
 Route.on('/').render('welcome');
+Route.get('login', 'UserController.index');
+Route.post('login', 'UserController.login');
+Route.get('signup', 'UserController.create');
+Route.post('signup', 'UserController.store');
