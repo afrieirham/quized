@@ -7,6 +7,12 @@ class QuestionSchema extends Schema {
 	up() {
 		this.create('questions', (table) => {
 			table.increments();
+			table
+				.integer('quiz_id')
+				.unsigned()
+				.notNullable()
+				.references('id')
+				.inTable('quizzes');
 			table.string('question');
 			table.string('ans_1');
 			table.string('ans_2');

@@ -14,11 +14,11 @@ class ResultSchema extends Schema {
 				.references('id')
 				.inTable('users');
 			table
-				.integer('quiz_id')
+				.integer('question_id')
 				.unsigned()
 				.notNullable()
 				.references('id')
-				.inTable('quizzes');
+				.inTable('questions');
 			table.integer('result');
 			table.timestamps();
 		});

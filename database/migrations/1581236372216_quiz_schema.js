@@ -7,13 +7,13 @@ class QuizSchema extends Schema {
 	up() {
 		this.create('quizzes', (table) => {
 			table.increments();
-			table.string('name');
 			table
 				.integer('created_by')
 				.unsigned()
 				.notNullable()
 				.references('id')
 				.inTable('users');
+			table.string('name');
 			table.timestamps();
 		});
 	}
