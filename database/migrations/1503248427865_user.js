@@ -8,6 +8,13 @@ class UserSchema extends Schema {
 		this.create('users', (table) => {
 			table.increments();
 			table
+				.integer('role')
+				.unsigned()
+				.notNullable()
+				.references('id')
+				.inTable('roles');
+			table.string('name');
+			table
 				.string('username', 80)
 				.notNullable()
 				.unique();

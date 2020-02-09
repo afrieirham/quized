@@ -8,7 +8,7 @@ class QuizSchema extends Schema {
 		this.create('quizzes', (table) => {
 			table.increments();
 			table
-				.integer('created_by')
+				.integer('user_id')
 				.unsigned()
 				.notNullable()
 				.references('id')
