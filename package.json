@@ -1,8 +1,8 @@
 {
-	"name": "adonis-fullstack-app",
-	"version": "4.1.0",
+	"name": "quized",
+	"version": "1.0.0",
 	"adonis-version": "4.1.0",
-	"description": "The fullstack application boilerplate for Adonisjs",
+	"description": "Quiz management system",
 	"main": "index.js",
 	"prettier": "@afrie/prettier-config",
 	"scripts": {
